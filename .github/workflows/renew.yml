@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs at 00:00 on the 1st and 15th of every month
     - cron: "0 0 1,15 * *"
-  workflow_dispatch: # Allows you to manually trigger the workflow from the Actions tab
+  workflow_dispatch:
 
 jobs:
   renew:
@@ -36,3 +36,4 @@ jobs:
         run: python main.py
         env:
           NOIP_HOST_ID: ${{ secrets.NOIP_HOST_ID }}
+          PROXY_URL: ${{ secrets.PROXY_URL }}

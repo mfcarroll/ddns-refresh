@@ -1,1 +1,8 @@
+# Virtual Environment
 .venv
+
+# OS Files
+.DS_Store
+
+# Config
+.env
