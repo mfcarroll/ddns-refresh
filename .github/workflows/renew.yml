@@ -30,7 +30,7 @@ jobs:
           pip install .
 
       - name: Install Playwright Browsers
-        run: playwright install --with-deps chromium
+        run: playwright install chromium
 
       - name: Run Renewal Script
         run: ddns-renew
